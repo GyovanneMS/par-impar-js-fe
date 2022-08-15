@@ -8,43 +8,53 @@
 const calculo = function(valorInicial, valorFinal){
     let inicial = valorInicial;
     let final = valorFinal;
+    let quantidadePar = 0;
+    let quantidadeImpar = 0;
     let resultado;
 
     console.log('Lista de números Pares\n');
     for(let i = inicial; i <= final; i++){
         resultado = i%2;
         if(resultado == 0){ 
-            console.log(i + '\n')
+            console.log(i + '\n');
+            quantidadePar++;
         }
     }
-    console.log('Lista de números Ímpares\n');
+    console.log('A quantidade de números pares encontrados é de: ' + quantidadePar);
+    console.log('\nLista de números Ímpares\n');
     for(let i = inicial; i <= final; i++){
         resultado = i%2;
         if(resultado != 0){
-            console.log(i + '\n')
+            console.log(i + '\n');
+            quantidadeImpar++;
         }
     }
+    console.log('A quantidade de números impares encontrados é de: ' + quantidadeImpar);
     process.exit(0);
 }
 
 const impar = function(valorInicial, valorFinal){
     let inicial = valorInicial;
     let final = valorFinal;
+    let quantidade = 0;
     let resultado;
 
     console.log('Lista de números Ímpares\n');
     for(let i = inicial; i <= final; i++){
         resultado = i%2;
         if(resultado != 0){
-            console.log(i + '\n')
+            console.log(i + '\n');
+            quantidade++;
         }
     }
+    console.log('A quantidade de números impares encontrados é de: ' + quantidade);
     process.exit(0);
 }
 
 const par = function(valorInicial, valorFinal){
     let inicial = valorInicial;
     let final = valorFinal;
+    let quantidade = 0;
     let resultado;
 
     console.log('Lista de números Pares\n');
@@ -52,9 +62,10 @@ const par = function(valorInicial, valorFinal){
         resultado = i%2;
         if(resultado == 0){
             console.log(i + '\n');
-
+            quantidade++;
         }
     }
+    console.log('A quantidade de números pares encontrados é de: ' + quantidade);
     process.exit(0);
 }
 
@@ -81,7 +92,7 @@ const escolhas = function(escolha, primeiro, ultimo){
 const inicialCerto = function(valorInicial){
     let inicial = valorInicial;
 
-    if(inicial == ''){
+    if(inicial === ''){
         console.log('Por favor digite o número inicial!');
         process.exit(0);
     } 
@@ -95,7 +106,7 @@ const finalCerto = function(valorFinal, valorInicial){
     let final = valorFinal;
     let inicial = valorInicial;
 
-    if(final == ''){
+    if(final === ''){
         console.log('Por favor digite o número final!');
         process.exit(0);
     } 
