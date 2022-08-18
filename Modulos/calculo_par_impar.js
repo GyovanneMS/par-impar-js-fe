@@ -2,7 +2,7 @@
 * Objetivo: Criação de uma calculadora de tabuada;
 * Data: 11/08/22
 * Autor: Gyovanne Martins
-* Versão: 1.1.0
+* Versão: 1.3.0
 =========================================================*/
 
 const calculo = function(valorInicial, valorFinal){

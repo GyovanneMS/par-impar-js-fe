@@ -2,7 +2,7 @@
 * Objetivo: Criação da interface de uma calculadora de par e impar;
 * Data: 11/08/22
 * Autor: Gyovanne Martins
-* Versão: 1.1.0
+* Versão: 1.3.0
 =========================================================*/
 
 console.log('Calculo de par e impar');
